@@ -148,7 +148,14 @@ These records were reviewed and corrected before import.
 ---
 ## System Architecture
 
-The CRM is organized around three core HubSpot objects:
+| CRM Object | Purpose                                      |
+| ---------- | -------------------------------------------- |
+| Contacts   | Customer information and customer attributes |
+| Deals      | Customer acquisition process                 |
+| Tickets    | Customer support and complaint management    |
+| Workflows  | Automated operational actions                |
+| Dashboards | Management and operational visibility        |
+
 
 ### Contacts
 
