@@ -1,78 +1,83 @@
-**System Architecture**
+# System Architecture
 
-**1. Business Design**
+## 1. Business Design
 
 Before configuring HubSpot, the business model and customer lifecycle were defined.
 
-**Business**
+### Business
 
 RenewGrid is a simulated renewable-energy company providing solar-powered electricity services to rural communities and peri-urban commercial customers.
 
-**Communities**
+### Communities
 
 The CRM includes six service communities:
-Emina
-Ivara
-Havil
-Farana
-Dantia
-Kelani
-Departments
+* Emina
+* Ivara
+* Havil
+* Farana
+* Dantia
+* Kelani
+* Departments
 
-**The operational structure includes:**
+### Departments
 
-Customer Experience
-Finance
-Operations
-Human Resources
+* Customer Experience
+* Finance
+* Operations
+* Human Resources
 
 The CRM primarily supports Customer Experience, Finance, and Operations workflows.
 
-**Customer Types**
+### Customer Types
 
 Customers are segmented into:
-Residential
-Small Business
-Commercial
+
+* Residential
+* Small Business
+* Commercial
 
 RenewGrid's core offering is solar-powered electricity service delivered through different tariff plans based on customer requirements.
-**Tarriff Plans:**
-Residential Basic
-Residential Plus
-SME Basic
-SME Plus
-Commercial Standard
-Commercial Premium
+
+### Tarriff Plans
+
+* Residential Basic
+* Residential Plus
+* SME Basic
+* SME Plus
+* Commercial Standard
+* Commercial Premium
 
 
-**2. CRM Architecture**
+## 2. CRM Architecture
 
 The HubSpot environment was configured around the major CRM objects and operational requirements.
 
-**Contacts**
+### Contacts
 
 Customer records contain information such as:
-Customer ID
-Name
-Email
-Phone
-Meter Number
-Community
-Customer Type
-Tariff Plan
-Installation Date
-Meter Status
-Service Status
-Subscription Expiry Date
-Last Recharge Date
-Customer Health Status
 
-**Deals**
+* Customer ID
+* Name
+* Email
+* Phone
+* Meter Number
+* Community
+* Customer Type
+* Tariff Plan
+* Installation Date
+* Meter Status
+* Service Status
+* Subscription Expiry Date
+* Last Recharge Date
+* Customer Health Status
+
+### Deals
 
 Deals represent the customer acquisition journey.
 
 The acquisition pipeline follows the progression from prospective customer to activation.
 
+```
 New Lead
    ↓
 Qualified
@@ -88,30 +93,31 @@ Installation Completed
 Activated
    ↓
 Closed Lost
+```
 
 This allows the organization to monitor where prospective customers are in the acquisition process.
 
 
-**Tickets**
+### Tickets
 
 Tickets represent customer support and service issues.
 
 Categories include:
 
-Power Outage
-Meter Fault
-Low Voltage
-Payment Issue
-Wrong Billing
-New Connection
-Relocation**
-Technical Complaint
-General Enquiry
+* Power Outage
+* Meter Fault
+* Low Voltage
+* Payment Issue
+* Wrong Billing
+* New Connection
+* Relocation**
+* Technical Complaint
+* General Enquiry
 
 This separates operational support activity from the customer's general CRM record.
 
 
-**3. Customer Data Collection**
+## 3. Customer Data Collection
 
 A customer registration form was created to simulate the initial customer acquisition process.
 
@@ -141,7 +147,7 @@ Identified data-quality issues included:
 The records were reviewed, validated, corrected, and imported into HubSpot.
 
 
-**4. Customer Onboarding Automation**
+## 4. Customer Onboarding Automation
 
 The first major automation addresses the transition from registration to onboarding.
 
@@ -150,6 +156,8 @@ Trigger
 A customer enters the CRM with a pending activation status.
 
 Automated actions
+
+```
 New Customer
      ↓
 Assign Customer Owner
@@ -159,20 +167,24 @@ Send Welcome Email
 Create Onboarding Task
      ↓
 Follow-Up
+```
 
-**Operational benefit:** this reduces manual administrative work and creates a consistent onboarding experience.
+### Operational benefit
+
+This reduces manual administrative work and creates a consistent onboarding experience.
 
 Instead of relying on a team member to remember every new registration, the CRM automatically initiates the required actions.
 
 
-**5. Subscription Management**
+## 5. Subscription Management
 
 RenewGrid includes an automated subscription-expiry process.
 
-**Business rule**
+### Business rule
 
 Customers approaching subscription expiry should receive timely communication and internal follow-up.
 
+```
 Subscription Expiry Approaching
             ↓
 Renewal Reminder
@@ -180,14 +192,18 @@ Renewal Reminder
 Internal Notification
             ↓
 Follow-Up Task
+```
 
-**Operational benefit:** this helps reduce missed renewal opportunities and allows Customer Experience teams to intervene before service disruption occurs.
+### Operational benefit
+
+This helps reduce missed renewal opportunities and allows Customer Experience teams to intervene before service disruption occurs.
 
 
-**6. 48-Hour Escalation**
+## 6. 48-Hour Escalation
 
 To prevent unresolved issues from remaining unattended, RenewGrid implements a 48-hour escalation rule.
 
+```
 Ticket Created
       ↓
 Wait 48 Hours
@@ -203,15 +219,18 @@ Increase Priority
 Notify Supervisor
    ↓
 Create Escalation Task
-Operational benefit
+```
+
+### Operational benefit
 
 The process introduces accountability and reduces the risk of support tickets becoming forgotten backlog items.
 
 
-**7. Support Operations**
+## 7. Support Operations
 
 Customer complaints are managed through HubSpot Tickets. A power-outage complaint triggers an automated support process.
 
+```
 Power Outage Complaint
           ↓
 High Priority
@@ -221,16 +240,18 @@ Technical Team
 Customer Acknowledgement
           ↓
 Operations Notification
+```
 
 This creates a structured response path from customer complaint to technical intervention.
 
 
-**8. Customer Retention**
+## 8. Customer Retention
 
 Customer inactivity is treated as a potential early warning signal. The CRM identifies customers who have not recharged for an extended period.
 
-**Re-engagement process**
+### Re-engagement process
 
+```
 No Recharge for 30+ Days
           ↓
 Customer Health = At Risk
@@ -240,29 +261,30 @@ Re-engagement Email
 Customer Success Notification
           ↓
 Follow-Up Call Task
+```
 
 The purpose is not simply to classify customers as inactive, but to create an intervention process around the signal.
 
-
-**9. Customer Health**
+## 9. Customer Health
 
 Customer Health Status provides a high-level view of customer relationship risk.
 
 Customers can be classified based on operational signals such as:
 
-Recharge activity
-Service status
-Support history
-Subscription status
-Customer feedback
+* Recharge activity
+* Service status
+* Support history
+* Subscription status
+* Customer feedback
 
 This enables Customer Success teams to prioritize intervention instead of treating every customer identically.
 
 
-**10. Customer Experience & CSAT**
+## 10. Customer Experience & CSAT
 
 When a support ticket is resolved, the customer is invited to provide feedback.
 
+```
 Ticket Closed
      ↓
 CSAT Survey
@@ -280,51 +302,52 @@ Escalate  Thank Customer
 Follow-Up Task
   ↓
 Supervisor Notification
+```
 
 Low customer satisfaction responses trigger additional attention. This creates a feedback loop between:
 
-Support → Customer Feedback → Improvement
+> Support → Customer Feedback → Improvement
 
 
-**11. Analytics**
+## 11. Analytics
 
 Three role-specific dashboards were designed.
 
-Executive Dashboard
+### Executive Dashboard
 
 Provides management-level visibility into:
 
-Total customers
-Customer status
-Customer health
-Customer mix
-Customers by community
-Open support issues
-Ticket priorities
+* Total customers
+* Customer status
+* Customer health
+* Customer mix
+* Customers by community
+* Open support issues
+* Ticket priorities
 
-**Operations Support Dashboard**
-
-Focuses on:
-
-Open tickets
-Ticket categories
-Ticket priority
-Escalated tickets
-Resolution performance
-
-
-**Customer Success Dashboard**
+### Operations Support Dashboard
 
 Focuses on:
 
-Active customers
-At-risk customers
-Inactive customers
-Customer health Distribution
-Customers by Community
+* Open tickets
+* Ticket categories
+* Ticket priority
+* Escalated tickets
+* Resolution performance
 
 
-**Data & Assumptions**
+### Customer Success Dashboard
+
+Focuses on:
+
+* Active customers
+* At-risk customers
+* Inactive customers
+* Customer health Distribution
+* Customers by Community
+
+
+## 12. Data & Assumptions
 
 All customer information used in this project is synthetic.
 
@@ -332,11 +355,11 @@ The dataset was created specifically to simulate realistic CRM operations withou
 
 Operational test records were also created to demonstrate:
 
-Customer acquisition
-Support tickets
-Escalations
-Subscription events
-Customer inactivity
-Customer feedback
+* Customer acquisition
+* Support tickets
+* Escalations
+* Subscription events
+* Customer inactivity
+* Customer feedback
 
 Where real email delivery or customer interaction was required for testing, controlled test accounts were used.
