@@ -224,7 +224,7 @@ The CRM was structured around four major operational layers:
 | Workflows  | Automated operational actions                |
 | Dashboards | Management and operational visibility        |
 
-[Click here to view the detailed system architecture]()
+[Click here to view the detailed system architecture](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/blob/main/doc/system_architecture.md)
 
 ---
 
@@ -293,7 +293,7 @@ The workflow is designed to:
 * create a clear follow-up action;
 * reduce the likelihood of newly registered customers being overlooked.
 
-[Click to view the New Customer Onboarding Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/tree/main/images/new_customer_onboarding)
+[Click here to view the New Customer Onboarding Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/tree/main/images/new_customer_onboarding)
 
 
 ### 2. 48-Hour Ticket Escalation
@@ -336,7 +336,7 @@ The workflow is designed to:
 
 This transforms escalation from an informal reminder into a defined operational process.
 
-[Click to view the 48-Hour Ticket Escalation Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/upload/main/images/48-Hour_ticket_escalation)
+[Click here to view the 48-Hour Ticket Escalation Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/upload/main/images/48-Hour_ticket_escalation)
 
 
 ### 3. Power Outage Workflow
@@ -377,7 +377,7 @@ The workflow is designed to:
 * establish a clear response path;
 * provide a defined escalation route for unresolved complaints.
 
-[Click to view the Power Outage Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/upload/main/images/power_outage_workflow)
+[Click here to view the Power Outage Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/upload/main/images/power_outage_workflow)
 
 
 ### 4. CSAT Workflow
