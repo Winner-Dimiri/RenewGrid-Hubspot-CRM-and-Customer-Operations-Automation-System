@@ -6,6 +6,7 @@ A Hubspot-based CRM operating system designed to connect customer onboarding, su
 [Project Overview](#project-overview)
 
 [Business Problem](#business-problem)
+
 [The Solution](#the-solution)
 
 [Project Objectives](#project-objectives)
