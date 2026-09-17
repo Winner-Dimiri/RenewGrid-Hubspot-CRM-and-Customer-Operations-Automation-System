@@ -225,7 +225,7 @@ The CRM was structured around four major operational layers:
 | Workflows  | Automated operational actions                |
 | Dashboards | Management and operational visibility        |
 
-[Click here to view the detailed system architecture](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/blob/main/doc/system_architecture.md)
+[Click here to view the detailed system architecture](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/blob/main/doc/system_architecture)
 
 ---
 
