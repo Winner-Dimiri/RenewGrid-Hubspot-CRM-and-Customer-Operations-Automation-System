@@ -34,6 +34,7 @@ A Hubspot-based CRM operating system designed to connect customer onboarding, su
 
 [Future Improvements](#future-improvements)
 
+---
 
 ## Project Overview
 
@@ -81,21 +82,22 @@ RenewGrid uses HubSpot as the customer relationship and service-management layer
 
 The system brings together:
 
-Customer records
-Customer segmentation
-Acquisition opportunities
-Customer onboarding
-Support tickets
-Complaint categorization
-Automated notifications
-Escalation management
-Customer health monitoring
-Re-engagement activities
-Customer satisfaction feedback
-Operational dashboards
+* Customer records
+* Customer segmentation
+* Acquisition opportunities
+* Customer onboarding
+* Support tickets
+* Complaint categorization
+* Automated notifications
+* Escalation management
+* Customer health monitoring
+* Re-engagement activities
+* Customer satisfaction feedback
+* Operational dashboards
 
 The system is designed so that a customer interaction can trigger the next appropriate operational action.
 
+---
 ## Project Objectives
 
 The system was designed to:
@@ -150,12 +152,12 @@ All customer information used in this project is synthetic. The dataset was crea
 
 Operational test records were also created to show:
 
-Customer acquisition
-Support tickets
-Escalations
-Subscription events
-Customer inactivity
-Customer feedback
+* Customer acquisition
+* Support tickets
+* Escalations
+* Subscription events
+* Customer inactivity
+* Customer feedback
 
 Where real email delivery or customer interaction was required for testing, controlled test accounts were used.
 
