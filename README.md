@@ -1,37 +1,37 @@
-# RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System
+# RenewGrid Hubspot CRM and Customer Operations Automation System
 A Hubspot-based CRM operating system designed to connect customer onboarding, support, escalation, satisfaction, retention, and re-engagement, while giving management visibility through operational dashboards.
 ---
 
 ## Contents
-[Project Overview](project-overview)
+[Project Overview](#project-overview)
 
-[Business Problem](business-problem)
+[Business Problem](#business-problem)
 
-[Project Objectives](project-objectives)
+[Project Objectives](#project-objectives)
 
-[Data Design and Validation](data-design-and-validation)
+[Data Design and Validation](#data-design-and-validation)
 
-[Technology Used](technology-used)
+[Technology Used](#technology-used)
 
-[System Architecture](system-architecture)
+[System Architecture](#system-architecture)
 
-[Customer Lifecycle](customer-lifecycle)
+[Customer Lifecycle](#customer-lifecycle)
 
-[Automation Workflows](automatic-workflows)
+[Automation Workflows](#automation-workflows)
 
-[Customer Support Operations](customer-support-operations)
+[Customer Support Operations](#customer-support-operations)
 
-[Customer Health and Retention](customer-health-and-retention)
+[Customer Health and Retention](#customer-health-and-retention)
 
-[Customer Experience](customer-experience)
+[Customer Experience](#customer-experience)
 
-[Analytics and Dashboard](analytics-and-dashboard)
+[Analytics and Dashboards](#analytics-and-dashboards)
 
-[Operational Benefits](operational-benefits)
+[Operational Benefits](#operational-benefits)
 
-[Project Limitations](project-limitations)
+[Project Limitations](#project-limitations)
 
-[Future Improvements](future-improvements)
+[Future Improvements](#future-improvements)
 
 
 ## Project Overview
@@ -513,9 +513,10 @@ This creates a feedback loop between service delivery and customer experience.
 
 Three operational dashboards were created.
 
+
 ### 1. Executive Dashboard
 
-Designed to provide a high-level view of the customer operation. 
+Designed to provide a high-level view of the customer operation.
 
 ![executive_dashboard](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/blob/main/images/executive_dashboard/Executive%20Dashboard.png)
 
