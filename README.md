@@ -6,6 +6,7 @@ A Hubspot-based CRM operating system designed to connect customer onboarding, su
 [Project Overview](#project-overview)
 
 [Business Problem](#business-problem)
+[The Solution](#the-solution)
 
 [Project Objectives](#project-objectives)
 
@@ -74,6 +75,27 @@ This project was designed around these operational questions rather than around 
 
 ---
 
+## The Solution
+
+RenewGrid uses HubSpot as the customer relationship and service-management layer for the business.
+
+The system brings together:
+
+Customer records
+Customer segmentation
+Acquisition opportunities
+Customer onboarding
+Support tickets
+Complaint categorization
+Automated notifications
+Escalation management
+Customer health monitoring
+Re-engagement activities
+Customer satisfaction feedback
+Operational dashboards
+
+The system is designed so that a customer interaction can trigger the next appropriate operational action.
+
 ## Project Objectives
 
 The system was designed to:
@@ -92,10 +114,13 @@ The system was designed to:
 ---
 
 ## Data Design and Validation
+A customer registration form was created to simulate the initial customer acquisition process. The form captures key customer information and feeds the CRM contact database.
+View the form [here](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/blob/main/images/RenewGrid%20Registration%20Form.png)
 
-The CRM was populated using synthetic customer data created specifically for this project.
+A synthetic dataset of 50 customer records was created for testing. 
+[Click to see the dataset](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/blob/main/files/RenewGrid_50_Customer_Dataset.xlsx)
 
-The dataset was intentionally validated before being imported into HubSpot.
+The dataset was validated before being imported into HubSpot.
 
 Validation included checks for:
 
@@ -107,6 +132,8 @@ Validation included checks for:
 * Community naming inconsistencies
 * Invalid or incomplete contact information
 
+Click [here](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/blob/main/images/Data%20Quality%20Log.png) to view the data quality log. 
+
 Identified data-quality issues included:
 
 * duplicate email records;
@@ -114,7 +141,23 @@ Identified data-quality issues included:
 * a customer type and tariff mismatch;
 * inconsistent community capitalization.
 
-These records were reviewed and corrected before import.
+The records were reviewed, validated, and corrected before import.
+
+You can see the cleaned dataset [here](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/blob/main/files/RenewGrid_Cleaned_Customer_Dataset.xlsx)
+
+### Data Assumptions
+All customer information used in this project is synthetic. The dataset was created specifically to simulate realistic CRM operations without exposing personal customer information.
+
+Operational test records were also created to show:
+
+Customer acquisition
+Support tickets
+Escalations
+Subscription events
+Customer inactivity
+Customer feedback
+
+Where real email delivery or customer interaction was required for testing, controlled test accounts were used.
 
 ---
 
@@ -129,24 +172,47 @@ These records were reviewed and corrected before import.
 * Microsoft Excel
 * Synthetic CSV datasets
 
-### Core Concepts
+### Automation
 
-* CRM architecture
-* Customer lifecycle management
-* Workflow automation
-* Ticket management
-* Customer support operations
-* Escalation management
-* Customer success
-* Customer retention
-* Customer experience
-* Data validation
-* Operational reporting
-* Dashboard design
-* Process improvement
+* Hubspot Workflows
 
 ---
 ## System Architecture
+
+The CRM was structured around four major operational layers:
+
+```
+                    RENEWGRID CRM
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+   CUSTOMER DATA    ACQUISITION       SUPPORT
+        │                │                │
+     Contacts          Deals           Tickets
+        │                │                │
+        └────────────────┼────────────────┘
+                         │
+                    AUTOMATION
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+    Onboarding       Retention       Escalation
+        │                │                │
+        └────────────────┼────────────────┘
+                         │
+                  CUSTOMER EXPERIENCE
+                         │
+                       CSAT
+                         │
+                    ANALYTICS
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+     Executive        Support        Customer Success
+     Dashboard        Dashboard         Dashboard
+                         │
+                  Acquisition Dashboard
+```
 
 | CRM Object | Purpose                                      |
 | ---------- | -------------------------------------------- |
@@ -156,61 +222,7 @@ These records were reviewed and corrected before import.
 | Workflows  | Automated operational actions                |
 | Dashboards | Management and operational visibility        |
 
-
-### Contacts
-
-Used for customer information and customer-level attributes. It includes:
-
-* Customer ID
-* Customer type
-* Community
-* Tariff plan
-* Meter number
-* Installation date
-* Service status
-* Last recharge date
-* Subscription expiry date
-* Customer health status
-
-### Deals
-
-Used to represent the customer acquisition process.
-
-The acquisition pipeline follows:
-
-```text
-New Lead
-   ↓
-Qualified
-   ↓
-Registration Completed
-   ↓
-Payment Pending
-   ↓
-Installation Scheduled
-   ↓
-Installation Completed
-   ↓
-Activated
-   ↓
-Closed Lost
-```
-
-### Tickets
-
-Used to manage customer support issues.
-
-Complaint categories include:
-
-* Power Outage
-* Meter Fault
-* Low Voltage
-* Payment Issue
-* Wrong Billing
-* New Connection
-* Relocation
-* Technical Complaint
-* General Enquiry
+[Click here to view the detailed system architecture]()
 
 ---
 
