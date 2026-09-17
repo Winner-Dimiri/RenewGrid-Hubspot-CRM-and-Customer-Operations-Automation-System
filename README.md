@@ -337,7 +337,7 @@ The workflow is designed to:
 
 This transforms escalation from an informal reminder into a defined operational process.
 
-[Click here to view the 48-Hour Ticket Escalation Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/upload/main/images/48-Hour_ticket_escalation)
+[Click here to view the 48-Hour Ticket Escalation Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/tree/main/images/48-Hour_ticket_escalation)
 
 
 ### 3. Power Outage Workflow
@@ -378,7 +378,7 @@ The workflow is designed to:
 * establish a clear response path;
 * provide a defined escalation route for unresolved complaints.
 
-[Click here to view the Power Outage Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/upload/main/images/power_outage_workflow)
+[Click here to view the Power Outage Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/tree/main/images/power_outage_workflow)
 
 
 ### 4. CSAT Workflow
@@ -424,7 +424,7 @@ The workflow is designed to:
 * give supervisors visibility into poor experiences;
 * create a feedback-to-action loop.
 
-[Click here to view the CSAT Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/upload/main/images/csat_workflow)
+[Click here to view the CSAT Workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/tree/main/images/csat_workflow)
 
 
 ### 5. Customer Re-engagement Workflow
@@ -462,7 +462,7 @@ The workflow is designed to:
 * give Customer Experience a defined follow-up action;
 * support customer retention efforts.
 
-[Click here to view the Re-engagement workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/upload/main/images/customer_re-engagement_workflow)
+[Click here to view the Customer Re-engagement workflow](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/tree/main/images/customer_re-engagement_workflow)
 
 ---
 
@@ -556,7 +556,7 @@ Designed around support workload and issue management.
 
 ![operations-support-dashboard](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/blob/main/images/operations_support_dashboard/Support%20Operations%20Dashboard_1.png)
 
-[View the full dashboard here](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/upload/main/images/operations_support_dashboard)
+[View the full dashboard here](https://github.com/Winner-Dimiri/RenewGrid-Hubspot-CRM-and-Customer-Operations-Automation-System/tree/main/images/operations_support_dashboard)
 
 #### Management question
 
